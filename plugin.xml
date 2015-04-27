@@ -27,12 +27,12 @@
 
             <header-file src="src/ios/Plugins/JPushPlugin.h"/>
             <source-file src="src/ios/Plugins/JPushPlugin.m"/>
-           
+
             <header-file src="src/ios/lib/APService.h" />
             <source-file src="src/ios/lib/libPushSDK-1.8.2.a" framework="true" />
-            
+
             <resource-file src="src/ios/PushConfig.plist" />
-                
+
             <framework src="CFNetwork.framework" weak="true" />
             <framework src="CoreFoundation.framework" weak="true" />
             <framework src="CoreTelephony.framework" weak="true" />
@@ -42,12 +42,12 @@
             <framework src="UIKit.framework" weak="true" />
             <framework src="Security.framework" weak="true" />
             <framework src="libz.dylib" weak="true" />
-            
+
         </platform>
-        
+
     <!-- android -->
     <platform name="android">
-    
+
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="JPushPlugin">
                 <param name="android-package" value="cn.jpush.phonegap.JPushPlugin"/>
@@ -151,8 +151,8 @@
             <!-- Required SDK核心功能-->
             <receiver android:name="cn.jpush.android.service.AlarmReceiver"/>
             <!-- Required  . Enable it you can get statistics data with channel -->
-            <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
-            <meta-data android:name="JPUSH_APPKEY" android:value="your appkey"/>
+            <meta-data android:name="JPUSH_CHANNEL" android:value="developer"/>
+            <meta-data android:name="JPUSH_APPKEY" android:value="d7d45181b8cff5015ce7632b"/>
         </config-file>
         <source-file src="src/android/jpush-sdk-release1.7.3.jar" target-dir="libs"/>
         <source-file src="src/android/armeabi/libjpush173.so" target-dir="libs/armeabi"/>
